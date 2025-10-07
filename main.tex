@@ -74,4 +74,16 @@ class Cuadrado(Figura):
 print(Cuadrado(4).area())
 \end{lstlisting}
 
+\section{Polimorfismo}
+El polimorfismo permite que distintos objetos respondan de forma diferente al mismo método.
+
+\subsection{Ejemplo}
+\begin{lstlisting}
+def hacer_hablar(animal):
+    animal.hablar()
+
+hacer_hablar(Perro())
+hacer_hablar(Animal())
+\end{lstlisting}
+
 \end{document}
