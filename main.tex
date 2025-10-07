@@ -105,4 +105,24 @@ class Coche(Vehiculo):
 Coche().mover()
 \end{lstlisting}
 
+\section{Method Resolution Order (MRO)}
+El MRO define el orden en que Python busca los métodos en una jerarquía de clases múltiples.
+
+\subsection{Ejemplo}
+\begin{lstlisting}
+class A:
+    def saludar(self): print("A")
+
+class B(A):
+    def saludar(self): print("B")
+
+class C(A):
+    def saludar(self): print("C")
+
+class D(B, C): pass
+
+print(D.__mro__)
+D().saludar()
+\end{lstlisting}
+
 \end{document}
