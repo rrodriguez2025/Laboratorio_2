@@ -37,4 +37,20 @@
     \end{center}
 \end{titlepage}
 
+\section{Herencia}
+La herencia permite crear una clase nueva basada en otra existente, reutilizando atributos y métodos.
+
+\subsection{Ejemplo}
+\begin{lstlisting}
+class Animal:
+    def hablar(self):
+        print("Ladridos")
+
+class Perro(Animal):
+    def hablar(self):
+        print("Guau Guau")
+
+Perro().hablar()
+\end{lstlisting}
+
 \end{document}
