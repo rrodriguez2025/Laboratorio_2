@@ -86,4 +86,23 @@ hacer_hablar(Perro())
 hacer_hablar(Animal())
 \end{lstlisting}
 
+\section{Interfaces}
+Una interfaz define un conjunto de métodos que deben ser implementados por las clases que la hereden.
+
+\subsection{Ejemplo}
+\begin{lstlisting}
+from abc import ABC, abstractmethod
+
+class Vehiculo(ABC):
+    @abstractmethod
+    def mover(self):
+        pass
+
+class Coche(Vehiculo):
+    def mover(self):
+        print("El coche se mueve")
+
+Coche().mover()
+\end{lstlisting}
+
 \end{document}
